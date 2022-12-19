@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+
+/* 页眉/Blog 标题 */
+.header {
+    height: 600px;
+    padding: 30px;
+    background-color: #9499a0;
+    position: relative;
+
+}
+a{
+    font-family: 方正姚体;
+    font-weight: bolder;
+    font-size: 60px;
+}
+#zi{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    font-size: 150px;
+    font-family: 字魂138号-霸燃手书;
+    color: black;
+}
+.geren{
+    font-size: 50px;
+    font-family: 潮字社风云简;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 演示镇魂行楷;
+}
+.jianjie{
+    font-family: 汉标西红市首字;
+    font-size: 45px;
+}
+.tu{
+    float: left;
+}
+.r{
+    float: right;
+}
+#img{
+    width: 100%;
+}
+
+
+
+/* 设置上导航栏的样式 */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    clear:both;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active {
+    background-color: #9de0ad;
+    color: #9de0ad;
+}
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+
+}
+
+/* 为文章添加卡片效果 */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.sub1{
+    width: 100%;
+    font-size: 20px;
+
+}
+.sub2 img{
+    width: 100%;
+    height: 60%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dashed red;
+}
+.sub2 p{
+    float: left;
+}
+.zzh{
+    width: 100%;
+    /*height: ;*/
+    font-size: 20px;
+
+}
+.zzh img{
+    width: 100%;
+    float: left;
+    border: 1px dashed red;
+}
+.zzh p{
+    font-size: 30px;
+}
+/* 清除列之后的浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 页脚 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
